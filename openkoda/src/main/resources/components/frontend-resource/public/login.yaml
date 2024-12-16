@@ -1,8 +1,13 @@
----
 !!com.openkoda.service.export.dto.FrontendResourceConversionDto
-includeInSitemap: false
-name: "login"
-requiredPrivilege: null
-type: "HTML"
-resourceType : "RESOURCE"
-content: "templates/frontend-resource/public/login.html"
+"accessLevel": "PUBLIC"
+"content": "templates/frontend-resource/public/login.html"
+"controllerEndpoints": [
+  ]
+"embeddable": !!bool "false"
+"includeInSitemap": !!bool "false"
+"module": "core"
+"name": "login"
+"organizationId": !!null "null"
+"requiredPrivilege": !!null "null"
+"resourceType": "RESOURCE"
+"type": "HTML"

@@ -1,8 +1,13 @@
----
 !!com.openkoda.service.export.dto.FrontendResourceConversionDto
-includeInSitemap: false
-name: "account-verification-fail"
-requiredPrivilege: null
-type: "HTML"
-resourceType : "RESOURCE"
-content: "templates/frontend-resource/public/account-verification-fail.html"
+"accessLevel": "PUBLIC"
+"content": "templates/frontend-resource/public/account-verification-fail.html"
+"controllerEndpoints": [
+  ]
+"embeddable": !!bool "false"
+"includeInSitemap": !!bool "false"
+"module": "core"
+"name": "account-verification-fail"
+"organizationId": !!null "null"
+"requiredPrivilege": !!null "null"
+"resourceType": "RESOURCE"
+"type": "HTML"

@@ -47,13 +47,13 @@
     <th:block th:if="${#arrays.contains(@environment.getActiveProfiles(),'tutorial')}">
         <th:block th:replace="~{tutorial::tutorial}"></th:block>
     </th:block>
-    <style th:inline="css" th:if="${@environment.getProperty('dashboard.personalization.enabled') and organizationEntity != null and organizationEntity.personalizeDashboard}">
+    <style th:inline="css" th:if="${true or (@environment.getProperty('dashboard.personalization.enabled') and organizationEntity != null and organizationEntity.personalizeDashboard)}">
         :root {
-            --primary: [(${organizationEntity.secondBrandColor})];
+            --primary: #14080E;
             --primary-light: color-mix(in srgb, var(--primary), white 20%);
             --primary-dark: color-mix(in srgb, var(--primary), black 20%);
             --primary-with-alpha: color-mix(in srgb, var(--primary), transparent 75%);
-            --main-bg-color: [(${organizationEntity.mainBrandColor})];
+            --main-bg-color: #018786;
             --main-bg-color-light: color-mix(in srgb, var(--main-bg-color), white 20%);
             --main-bg-color-dark: color-mix(in srgb, var(--main-bg-color), black 20%);
         }

@@ -47,9 +47,9 @@ public class OrganizationDto implements CanonicalObject, OrganizationRelatedObje
     public boolean setupTrial;
     public boolean personalizeDashboard;
 
-    public String mainBrandColor;
+    public String mainBrandColor= "#018786";
 
-    public String secondBrandColor;
+    public String secondBrandColor= "#14080E";
 
     public Long logoId;
 
